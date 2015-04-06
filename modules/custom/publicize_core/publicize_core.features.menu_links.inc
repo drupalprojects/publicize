@@ -9,169 +9,6 @@
  */
 function publicize_core_menu_default_menu_links() {
   $menu_links = array();
-
-  // Exported menu link: main-menu_blog:node/12
-  $menu_links['main-menu_blog:node/12'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/12',
-    'router_path' => 'node/%',
-    'link_title' => 'Blog',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_blog:node/12',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -46,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_courses:node/8
-  $menu_links['main-menu_courses:node/8'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/8',
-    'router_path' => 'node/%',
-    'link_title' => 'Courses',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_courses:node/8',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_projects:node/10
-  $menu_links['main-menu_projects:node/10'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/10',
-    'router_path' => 'node/%',
-    'link_title' => 'Projects',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_projects:node/10',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_team:node/18
-  $menu_links['main-menu_team:node/18'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/18',
-    'router_path' => 'node/%',
-    'link_title' => 'Team',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_team:node/18',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_work-with-us:node/3
-  $menu_links['main-menu_work-with-us:node/3'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/3',
-    'router_path' => 'node/%',
-    'link_title' => 'Work with us',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_work-with-us:node/3',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-publicize-site-main-nav_blog:node/12
-  $menu_links['menu-publicize-site-main-nav_blog:node/12'] = array(
-    'menu_name' => 'menu-publicize-site-main-nav',
-    'link_path' => 'node/12',
-    'router_path' => 'node/%',
-    'link_title' => 'Blog',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'menu-publicize-site-main-nav_blog:node/12',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-publicize-site-main-nav_courses:node/8
-  $menu_links['menu-publicize-site-main-nav_courses:node/8'] = array(
-    'menu_name' => 'menu-publicize-site-main-nav',
-    'link_path' => 'node/8',
-    'router_path' => 'node/%',
-    'link_title' => 'Courses',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'menu-publicize-site-main-nav_courses:node/8',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-publicize-site-main-nav_projects:node/10
-  $menu_links['menu-publicize-site-main-nav_projects:node/10'] = array(
-    'menu_name' => 'menu-publicize-site-main-nav',
-    'link_path' => 'node/10',
-    'router_path' => 'node/%',
-    'link_title' => 'Projects',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'menu-publicize-site-main-nav_projects:node/10',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-publicize-site-main-nav_work:node/3
-  $menu_links['menu-publicize-site-main-nav_work:node/3'] = array(
-    'menu_name' => 'menu-publicize-site-main-nav',
-    'link_path' => 'node/3',
-    'router_path' => 'node/%',
-    'link_title' => 'Work',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'menu-publicize-site-main-nav_work:node/3',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
   // Exported menu link: menu-social-menu_facebook:http://facebook.com
   $menu_links['menu-social-menu_facebook:http://facebook.com'] = array(
     'menu_name' => 'menu-social-menu',
@@ -189,7 +26,7 @@ function publicize_core_menu_default_menu_links() {
       'identifier' => 'menu-social-menu_facebook:http://facebook.com',
     ),
     'module' => 'menu',
-    'hidden' => 1,
+    'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
@@ -213,7 +50,7 @@ function publicize_core_menu_default_menu_links() {
       'identifier' => 'menu-social-menu_mail:http://google.com',
     ),
     'module' => 'menu',
-    'hidden' => 1,
+    'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,

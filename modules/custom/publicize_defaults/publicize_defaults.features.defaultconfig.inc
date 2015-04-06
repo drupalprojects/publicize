@@ -5690,14 +5690,14 @@ function publicize_defaults_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'maintenance_mode_message';
-  $strongarm->value = 'ODL is currently under maintenance. We should be back shortly. Thank you for your patience.';
+  $strongarm->value = 'We are currently under maintenance. We should be back shortly. Thank you for your patience.';
   $export['maintenance_mode_message'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_block_1_admin_title';
-  $strongarm->value = 'ODL Site Main Nav';
+  $strongarm->value = 'Site Main Nav';
   $export['menu_block_1_admin_title'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5935,7 +5935,7 @@ function publicize_defaults_defaultconfig_strongarm() {
       'enabled' => 1,
       'weight' => '0',
       'type' => 'menu',
-      'title' => 'ODL Site Main Nav',
+      'title' => 'Site Main Nav',
       'name' => 'menu-publicize-site-main-nav',
     ),
     'menu-social-menu' => array(
@@ -6640,21 +6640,14 @@ function publicize_defaults_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node/3';
+  $strongarm->value = 'node/1';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'site_mail';
-  $strongarm->value = 'msc227@psu.edu';
-  $export['site_mail'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'ODL';
+  $strongarm->value = 'PUB';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
