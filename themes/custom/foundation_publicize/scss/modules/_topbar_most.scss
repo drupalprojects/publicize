@@ -1,0 +1,142 @@
+//Settings for .top-bar-most
+$top-bar-most-height:4.5rem; // Change this variable to change the height of the header
+$top-bar-most-margin:0.25rem;
+
+.top-bar-most {
+	.row {
+		max-width:none;
+		// height: $top-bar-most-height;
+		margin: $top-bar-most-margin 0;
+
+		div {
+			height:inherit;
+		}
+	}
+}
+
+// Social Menu Block
+.block-menu-block-3 {
+	float:left;
+}
+.social-menu-block-item {
+	$icon-size:1.5rem;
+	$icon-margin-calc-combined:$top-bar-most-height - $icon-size;
+	$icon-margin:$icon-margin-calc-combined * 0.5;
+	height: $icon-size;
+	width: $icon-size;
+	margin: $icon-margin 0.25rem;
+	color: #fff;
+	overflow: hidden;
+	font-size: $icon-size;
+	line-height: $icon-size;
+	display: block;
+}
+.menu-name-menu-social-menu {
+	margin-left:1rem;
+	ul.menu {
+		//margin-top: 0.75rem;
+		li {
+			list-style:none;
+		}
+	}
+}
+// Automagical Logo Sizing
+.publicize-logo {
+	$logo-height:$top-bar-most-height - 0.5rem;
+	$logo-width:$logo-height * 2.5; //The logo file width is 2.5x the height
+	$logo-margin-calc-combined:$top-bar-most-height - $logo-height;
+	$logo-margin:$logo-margin-calc-combined * 0.5;
+	float: left;
+	display: block;
+	height: $logo-height;
+	width: $logo-width;
+	margin: $logo-margin 0;
+	@include opacity(0.8);
+	@media #{$small-only} {
+		height: $logo-height * 0.75;
+		width: $logo-width  * 0.75;
+		margin: $logo-margin 0;
+	}
+}
+.block-publicize-search {
+	h2 {
+		display: none;
+	}
+	.form-type-radio.form-item-options label{
+		font-size:0.75rem;
+	}
+	#publicize-search-form {
+		padding:1rem 0;
+		position: initial;
+		display: block;
+		overflow: hidden;
+		max-width: none;
+		margin:0;
+
+		.form-text {
+			margin:0;
+		}
+		.form-type-radios {
+			padding: 0rem 1.8rem;
+			top: 3.5rem;
+			position: absolute;
+			right: 1rem;
+			width: 25rem;
+			z-index: 20;
+			margin:0;
+			background-color:$publicize-search-radios-bg-color;
+			@include radius(0.5rem);
+
+			label {
+				color:$white;
+				@include opacity(0.9);
+			}
+		}
+		#edit-textfield {
+			border-style: solid;
+			border-color: $publicize-search-btn-color;
+			border-width: 2px;
+			color:$white;
+			height:2.5rem;
+			&:focus {
+				border-color:$white;
+			}
+			&::-webkit-input-placeholder {
+			   color: $white;
+			}
+
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: $white;
+			}
+
+			&::-moz-placeholder {  /* Firefox 19+ */
+			   color: $white;
+			}
+
+			&:-ms-input-placeholder {
+			   color: $white;
+			}
+		}
+		.form-type-textfield {
+			float: left;
+			width: 50%;
+			input {
+				@include radius(0.5rem 0 0 0.5rem);
+				background: transparent;
+			}
+		}
+	}
+	button#edit-submit, button#edit-submit--2 {
+		float: left;
+		width: 50%;
+		padding: 0.6rem;
+		margin:0;
+		height:2.5rem;
+		background-color:$publicize-search-btn-color;
+		@include radius(0 0.5rem 0.5rem 0);
+	}
+
+	input[type="radio"] {
+		margin:0;
+	}
+}

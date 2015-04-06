@@ -1,0 +1,89 @@
+.l-header .contain-to-grid {
+	background-color: rgba($top-bar-base-color, 0.2);
+}
+.top-bar {
+	background-color:transparent;
+
+	// &-most {
+	// 	//background-color: rgba($top-bar-base-color, 0.5);
+	// 	.row {
+	// 		max-width:none;
+	// 		height: 4.5rem;
+	// 		margin: 0.25rem 0;
+	// 	}
+	// }
+	@media #{$small-up} {
+		text-align:center;
+
+		.name.publicize-lettering {
+			h1 {
+				text-align: center;
+				color:$white;
+			}
+		}
+	}
+	@media #{$medium-up} {
+		padding:1em;
+		height:auto;
+
+		.name.publicize-lettering {
+			border-radius: 50%;
+			width: 4rem;
+			height: 4rem;
+			background-color:$publicize-lettering-bg-color;
+			color:$publicize-lettering-text-color;
+			padding:0;
+			margin:0;
+
+			h1 {
+				margin:0;
+				padding:0;
+
+				a {
+					margin:0;
+					padding:0;
+					color:black;
+				}
+			}
+		}
+		h3.site-slogan {
+			color: $white;
+			width: 8rem;
+			margin: 0 0 0 1rem;
+			text-align:left;
+		}
+	}
+}
+
+@media #{$medium-up} {
+	.top-bar-section ul li {
+		background: transparent;
+		padding:0.59375rem 0;
+
+		&:not(.has-form) a:not(.button) {
+			background: transparent;
+			border-width: 2px;
+			border-style: solid;
+			border-color: rgba(255,255,255,0);
+			&:hover{
+				@include border-radius(0.5rem);
+				//background-color: $white;
+				color:$publicize-lettering-text-color;
+				border-width: 2px;
+				border-style: solid;
+				border-color: rgba(255,255,255,0);
+				background-color: $white;
+				&.active {
+					color:$publicize-lettering-text-color;
+				}
+			}
+			&.active {
+				@include border-radius(0.5rem);
+				color:$white;
+				border-width: 2px;
+				border-style: solid;
+				border-color: $topbar-link-border-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,241 @@
+// Non-modular or client styles for the .l-content region.
+body.page-node {
+	background-position: center;
+	//background-size: 100rem;
+	background-color: #292827;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
+
+}
+//////////// Layout Mod Tools
+////////////
+.kill-margin {
+	max-width:none;
+	padding:0;
+	margin:0;
+}
+//// Responsive Line Breaks
+.anti-orphan {
+    white-space: nowrap;
+}
+.anti-orphan.long-line {
+    white-space: normal;
+}
+////////////
+////////////
+.l-main {
+	padding:3rem 0;
+}
+.main-body-wrapper {
+	background-color:$white;
+}
+//////// Course Listing Page
+.course-grid-list {
+	div.svg-icon {
+		border-radius: 50%;
+		border-color: #ccc;
+		border-style: solid;
+		border-width: 5px;
+		height: 7rem;
+		width: 7rem;
+		margin: 0 auto;
+	}
+	.course-abbrev {
+		a h2 {
+			text-align: center;
+		}
+	}
+	.course-title-reveal {
+		margin-top:1rem;
+		text-align: center;
+	}
+}
+//////// Project Listing Page
+.block-views-design-list-grid-block {
+	
+}
+//////// Blog Posts Listing Page
+.view-blog-posts {
+	.panel {
+		padding: 0 0 1rem 0;
+		border: none;
+		
+		.read-more {
+			margin-top: 0.2rem;
+			@media #{$small-only} {
+				margin-left:1rem;	
+			}
+		}
+		
+		h2 {
+			margin: 1rem 1rem 1rem 0;
+		}
+
+		@media #{$medium-up} {
+			text-align:center;
+			padding: 0 0 0 0;
+		}
+
+		@media #{$medium-up} {
+			float:left;
+			width:100%;
+			text-align:left;
+		}
+	}
+	p {
+		margin:2rem 0;
+
+		@media #{$medium-up} {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		    -moz-column-count: 2; /* Firefox */
+		    column-count: 2;
+		}
+	}
+}
+.blog-list {
+	
+	&-thumb-img {
+		@media #{$small-only} {
+			width:100%;	
+		}
+
+		@media #{$medium-up} {
+			float:left;
+			margin-right:1rem;
+			height:auto;
+			overflow: hidden;
+			width: 10rem;
+			
+			img {
+				width: 20rem;
+				position: relative;
+				left: 0;
+				max-width: 800%;
+				left: -50%;
+			}
+		}
+	}
+	&-title {
+		
+		@media #{$small-only} {
+			margin-left:1rem;	
+		}
+		
+		@media #{$medium-up} {
+			// float:left;
+		}
+
+	}
+	&-postdate {
+		
+		@media #{$small-only} {
+			margin-left:1rem;	
+		}
+		
+		@media #{$medium-up} {
+			// float:left;
+		}
+	}
+	&-proj-auth {
+		
+		@media #{$small-only} {
+			margin-left:1rem;	
+		}
+		
+		@media #{$medium-up} {
+			// float:left;
+		}
+	}
+	&-tags {
+		
+		@media #{$medium-up} {
+			float:left;
+		}
+	}
+}
+
+//////// Blog recent posts
+.block-views-recent-blog-posts-block-block {
+	margin-top: 2rem;
+	.panel span {
+		font-size:0.8rem;
+		line-height: 0.6rem !important;
+	}
+}
+.view-blog-posts-archive {
+	ul {
+		li:before {
+		 content: "\009B \0020";
+	     }
+	     li {
+	     	list-style: none;
+	     	margin: 0.2rem 0;
+	     }
+	 }
+ }
+
+//////// Blog Post Page
+.node-type-blog-post {
+	.main-body-wrapper {
+		border-top: 1rem solid $black;
+	}
+	p {
+		&:last-child {
+			margin-bottom:3rem;
+		}
+
+		@media #{$small-only} {
+			text-align: justify;	
+		}
+
+	}
+	.post-date {
+		font-size:1.5rem;
+	}
+	.post-author-label {
+		display: inline-block;
+	}
+	.post-author {
+		display: block;
+	}
+	.post-tags-label {
+		float:left;
+		margin:0.15rem 0;
+	}
+	.post-tags {
+		background-color:$post-tags-color;
+		padding: 0.5rem 0.5rem;
+		display: inline-block;
+		@include radius(3px);
+		font-size:0.75rem;
+		line-height: 0.75rem;
+		margin: 1.5rem 0;
+		a {
+			margin:0.15rem 0.5rem;
+			float:left;
+		}
+	}
+	.post-image {
+
+	}
+	.post-copy {
+		padding:2rem 0 0 0;
+	}
+}
+//////// Blog Blocks
+h2.block-title {
+	color: $blocks-heading-color;
+}
+//////// Add to Any heading not hidden
+.block-addtoany {
+	border: 1px #ccc solid;
+	padding: 1rem;
+	margin:0 0 1rem;
+	display: inline-block;
+
+	h2 {
+		display:none;
+	}
+
+	.addtoany_list.a2a_kit_size_32 > a {
+		font-size: 1rem;
+	}
+}

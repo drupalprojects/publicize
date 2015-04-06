@@ -1,0 +1,16 @@
+// Non-modular or client styles for .l-footer region.
+@include sticky-footer(20rem, '.page', '.inner-wrapper-calc', '.l-footer');
+
+footer {
+	&.panel {
+		margin:0;
+	}
+}
+.office-address {
+	p {
+		margin:0;
+	}
+}
+.block-block-2 {
+	margin-bottom:2rem;
+}

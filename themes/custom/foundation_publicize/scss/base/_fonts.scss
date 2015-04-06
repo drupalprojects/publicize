@@ -1,0 +1,114 @@
+// To Do: Add backup font classes al la Jason Pamental's technique
+
+//Share Tech Mono Google Font
+%sharetechmono-normal {
+	 font-family: "Share Tech Mono", "Lucida Console", "Monaco", monospace;
+	 font-style: normal;
+	 font-weight: 300;
+}
+//Oswald Google Font
+%oswald-light {
+	 font-family: "Oswald", "Impact", "Tahoma", sans-serif;
+	 font-style: normal;
+	 font-weight: 300;
+}
+%oswald-normal {
+	 font-family: "Oswald", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 400;
+}
+//Open Sans Google Font
+%opensans-light {
+	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 300;
+}
+%opensans-normal {
+	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 600;
+}
+%opensans-bold {
+	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 700;
+}
+
+// Applied fonts
+
+body {
+	 @extend %opensans-normal;
+}
+
+h1 {
+	 @extend %oswald-normal;
+}
+
+h2 {
+	 @extend %oswald-light;
+}
+h3 {
+	 @extend %opensans-light;
+}
+a {
+	@extend %opensans-normal;
+}
+p {
+	@extend %opensans-light;
+}
+
+.top-bar .name h1 a {
+	@extend %oswald-normal;
+}
+h1.title {
+	text-transform:uppercase;
+}
+.l-header h1.title {
+	@extend %sharetechmono-normal;
+	text-transform:lowercase;
+}
+.publicize-lettering {
+	text-transform: uppercase;
+}
+h3.site-slogan {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.top-bar-section ul li>a {
+	@extend %opensans-light;
+	font-size: 1rem;
+}
+
+.post {
+	&-title {
+		text-transform:uppercase;
+	}
+	&-date {
+		@extend %opensans-light;
+	}
+	&-author {
+		@extend %opensans-light;
+	}
+	&-tags {
+		@extend %opensans-light;
+		text-transform:uppercase;
+	}
+}
+.blog-list {
+	&-proj-auth {
+		@extend %opensans-light;
+	}
+	&-title {
+		text-transform:uppercase;
+	}
+}
+
+h2.block-title {
+	text-transform:uppercase;
+}
+#edit-textfield {
+	@extend %opensans-light;
+}
+.design-grid-proj-name {
+	text-transform:uppercase;
+}
