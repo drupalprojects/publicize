@@ -165,21 +165,6 @@ projects[views_bulk_operations][subdir] = "contrib"
 
 ; +++++ Themes +++++
 
-; bootstrap
-projects[bootstrap][type] = "theme"
-projects[bootstrap][version] = "3.0"
-projects[bootstrap][subdir] = "contrib"
-
-; omega
-projects[omega][type] = "theme"
-projects[omega][version] = "3.1"
-projects[omega][subdir] = "contrib"
-
-; chamfer
-projects[chamfer][type] = "theme"
-projects[chamfer][version] = "1.1"
-projects[chamfer][subdir] = "contrib"
-
 ; rubik
 projects[rubik][type] = "theme"
 projects[rubik][version] = "4.1"
@@ -227,13 +212,6 @@ libraries[plupload][destination] = "libraries"
 libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_6-rm_examples-1903850-5.patch"
 libraries[plupload][download][type] = "file"
 libraries[plupload][download][url] = "http://plupload.com/downloads/plupload_1_5_6.zip"
-
-; CKEditor
-libraries[ckeditor][directory_name] = "ckeditor"
-libraries[ckeditor][type] = "library"
-libraries[ckeditor][destination] = "libraries"
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.tar.gz"
 
 ; ColorBox
 libraries[colorbox][directory_name] = "colorbox"

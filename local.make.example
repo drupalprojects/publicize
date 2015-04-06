@@ -8,41 +8,6 @@ includes[] = "drupal-org.make"
 
 ; +++++ Libraries +++++
 
-; swfobject
-libraries[swfobject][directory_name] = "swfobject"
-libraries[swfobject][type] = "library"
-libraries[swfobject][destination] = "libraries"
-libraries[swfobject][download][type] = "get"
-libraries[swfobject][download][url] = "" ; TODO add download URI
-
-; underscore
-libraries[underscore][directory_name] = "underscore"
-libraries[underscore][type] = "library"
-libraries[underscore][destination] = "libraries"
-libraries[underscore][download][type] = "get"
-libraries[underscore][download][url] = "" ; TODO add download URI
-
-; imagesloaded
-libraries[imagesloaded][directory_name] = "imagesloaded"
-libraries[imagesloaded][type] = "library"
-libraries[imagesloaded][destination] = "libraries"
-libraries[imagesloaded][download][type] = "get"
-libraries[imagesloaded][download][url] = "" ; TODO add download URI
-
-; fastclick
-libraries[fastclick][directory_name] = "fastclick"
-libraries[fastclick][type] = "library"
-libraries[fastclick][destination] = "libraries"
-libraries[fastclick][download][type] = "get"
-libraries[fastclick][download][url] = "" ; TODO add download URI
-
-; placeholder
-libraries[placeholder][directory_name] = "placeholder"
-libraries[placeholder][type] = "library"
-libraries[placeholder][destination] = "libraries"
-libraries[placeholder][download][type] = "get"
-libraries[placeholder][download][url] = "" ; TODO add download URI
-
 ; Views TimelineJS
 libraries[timeline][directory_name] = "timeline"
 libraries[timeline][type] = "library"
@@ -64,25 +29,17 @@ libraries[mediaelementjs][directory_name] = "mediaelementjs"
 libraries[mediaelementjs][type] = "library"
 libraries[mediaelementjs][destination] = "libraries"
 libraries[mediaelementjs][download][type] = "get"
-libraries[mediaelementjs][download][url] = "" ; TODO add download URI
-libraries[mediaelementjs][download][post_data] = "format=tar&adapter=jquery&players[]=img&players[]=iframe&players[]=html&players[]=swf&players[]=flv&players[]=qt&players[]=wmp&language=en&css_support=on"
-libraries[mediaelementjs][download][file_type] = "tar.gz"
+libraries[mediaelementjs][download][url] = "http://github.com/johndyer/mediaelement/zipball/master"
 
 ; backbone
 libraries[backbone][directory_name] = "backbone"
 libraries[backbone][type] = "library"
 libraries[backbone][destination] = "libraries"
 libraries[backbone][download][type] = "get"
-libraries[backbone][download][url] = "" ; TODO add download URI
-libraries[backbone][download][post_data] = "format=tar&adapter=jquery&players[]=img&players[]=iframe&players[]=html&players[]=swf&players[]=flv&players[]=qt&players[]=wmp&language=en&css_support=on"
-libraries[backbone][download][file_type] = "tar.gz"
+libraries[backbone][download][url] = "http://backbonejs.org/backbone-min.js"
 
-; quail
-libraries[quail][directory_name] = "quail"
-libraries[quail][type] = "library"
-libraries[quail][destination] = "libraries"
-libraries[quail][download][type] = "get"
-libraries[quail][download][url] = "" ; TODO add download URI
-libraries[quail][download][post_data] = "format=tar&adapter=jquery&players[]=img&players[]=iframe&players[]=html&players[]=swf&players[]=flv&players[]=qt&players[]=wmp&language=en&css_support=on"
-libraries[quail][download][file_type] = "tar.gz"
-
+; ckeditor 4.2 + codemirror and table resize
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://github.com/btopro/ckeditor4textbook/archive/2.1.zip"
+libraries[ckeditor][directory_name] = "ckeditor"
+libraries[ckeditor][destination] = "libraries"
