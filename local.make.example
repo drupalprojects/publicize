@@ -43,3 +43,11 @@ libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://github.com/btopro/ckeditor4textbook/archive/2.1.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][destination] = "libraries"
+
+; publicize
+libraries[publicize][type] = "profile"
+libraries[publicize][destination] = "../../profiles"
+libraries[publicize][download][type] = "git"
+libraries[publicize][download][branch] = "7.x-1.x"
+libraries[publicize][directory_name] = "publicize"
+libraries[publicize][download][url] = "https://github.com/drupalprojects/publicize.git"
