@@ -198,21 +198,6 @@ libraries[colorpicker][destination] = "libraries"
 libraries[colorpicker][download][type] = "get"
 libraries[colorpicker][download][url] = "http://www.eyecon.ro/colorpicker/colorpicker.zip"
 
-; jQuery Masonry
-libraries[masonry][directory_name] = "masonry"
-libraries[masonry][type] = "library"
-libraries[masonry][destination] = "libraries"
-libraries[masonry][download][type] = "get"
-libraries[masonry][download][url] = "http://masonry.desandro.com/jquery.masonry.min.js"
-
-; Plupload
-libraries[plupload][directory_name] = "plupload"
-libraries[plupload][type] = "library"
-libraries[plupload][destination] = "libraries"
-libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_6-rm_examples-1903850-5.patch"
-libraries[plupload][download][type] = "file"
-libraries[plupload][download][url] = "http://plupload.com/downloads/plupload_1_5_6.zip"
-
 ; ColorBox
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][type] = "library"
