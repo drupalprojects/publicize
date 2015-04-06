@@ -55,8 +55,7 @@ dependencies[] = field_group
 dependencies[] = filefield_paths
 dependencies[] = link
 dependencies[] = select_or_other
-; Filter
-dependencies[] = simplehtmldom
+
 ; FlexSlider
 dependencies[] = flexslider
 dependencies[] = flexslider_fields
