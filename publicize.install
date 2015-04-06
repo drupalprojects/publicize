@@ -90,11 +90,6 @@ function publicize_install() {
     $query->values($block);
   }
   $query->execute();
-  // disable the titles of all menu blocks
-  db_update('block')
-    ->fields(array('title' => '<none>'))
-    ->condition('module', 'menu_block')
-    ->execute();
   // Update the menu router information.
   menu_rebuild();
   // revert features to ensure they are all installed
@@ -103,6 +98,12 @@ function publicize_install() {
     'publicize_core',
   );
   features_revert($features);
+  // disable the titles of all menu blocks
+  db_update('block')
+    ->fields(array('title' => '<none>'))
+    ->condition('module', 'menu_block')
+    ->execute();
+  cache_clear_all();
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages

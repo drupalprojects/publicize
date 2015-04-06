@@ -19,7 +19,7 @@ function publicize_core_menu_default_menu_custom() {
   // Exported menu: menu-publicize-site-main-nav.
   $menus['menu-publicize-site-main-nav'] = array(
     'menu_name' => 'menu-publicize-site-main-nav',
-    'title' => 'ODL Site Main Nav',
+    'title' => 'Site Main Nav',
     'description' => '',
   );
   // Exported menu: menu-social-menu.
@@ -37,7 +37,7 @@ function publicize_core_menu_default_menu_custom() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Main menu');
-  t('ODL Site Main Nav');
+  t('Site Main Nav');
   t('Social Menu');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
   t('The <em>User</em> menu contains links related to the user\'s account, as well as the \'Log out\' link.');
