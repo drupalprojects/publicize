@@ -110,3 +110,4 @@ dependencies[] = features
 dependencies[] = defaultconfig
 dependencies[] = publicize_core
 dependencies[] = publicize_defaults
+dependencies[] = publicize_content

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Publicize content feature.
+ */
+
+include_once 'publicize_content.features.inc';

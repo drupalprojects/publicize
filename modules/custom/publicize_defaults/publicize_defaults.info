@@ -1,7 +1,7 @@
 name = Publicize defaults
 description = Defaults for the publicize distributions.
 core = 7.x
-package = Features
+package = Publicize
 dependencies[] = autocomplete_deluxe
 dependencies[] = ctools
 dependencies[] = features
