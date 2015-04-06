@@ -6,7 +6,7 @@
  */
 function publicize_install() {
   // Enable some publicize blocks.
-  $default_theme = 'foundation_odl';
+  $default_theme = 'foundation_publicize';
   $admin_theme = 'rubik';
   // disable all themes
   db_update('system')
@@ -94,8 +94,8 @@ function publicize_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
-    'publicize_core',
     'publicize_defaults',
+    'publicize_core',
   );
   features_revert($features);
   // ignore any rebuild messages

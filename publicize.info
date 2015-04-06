@@ -107,5 +107,6 @@ dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 ; Features
 dependencies[] = features
+dependencies[] = defaultconfig
 dependencies[] = publicize_core
 dependencies[] = publicize_defaults

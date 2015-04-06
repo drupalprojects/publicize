@@ -163,6 +163,9 @@ projects[views][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3.2"
 projects[views_bulk_operations][subdir] = "contrib"
 
+projects[defaultconfig][version] = "1.x-dev"
+projects[defaultconfig][subdir] = "contrib"
+
 ; +++++ Themes +++++
 
 ; rubik
@@ -174,6 +177,11 @@ projects[rubik][subdir] = "contrib"
 projects[tao][type] = "theme"
 projects[tao][version] = "3.1"
 projects[tao][subdir] = "contrib"
+
+; tao
+projects[zurb_foundation][type] = "theme"
+projects[zurb_foundation][version] = "5.x-dev"
+projects[zurb_foundation][subdir] = "contrib"
 
 ; +++++ Libraries +++++
 
