@@ -1,0 +1,16 @@
+code {
+  background-color: transparent;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+}
+
+.top-bar-section .dropdown li {
+  padding: 0em;
+}
+
+.top-bar-section .dropdown li:hover {
+  border-width: 1px;
+  border-color: #dfdfdf;
+  border-style: solid;
+}
