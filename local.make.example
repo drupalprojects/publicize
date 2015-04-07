@@ -6,6 +6,9 @@ projects[drupal][version] = "7.x"
 ; include the d.o. profile base
 includes[] = "drupal-org.make"
 
+projects[custom_formatters][version] = "2.2"
+projects[custom_formatters][subdir] = "contrib"
+
 ; +++++ Libraries +++++
 
 ; Views TimelineJS

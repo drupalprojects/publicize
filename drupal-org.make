@@ -34,9 +34,6 @@ projects[features][subdir] = "contrib"
 projects[content_taxonomy][version] = "1.0-beta2"
 projects[content_taxonomy][subdir] = "contrib"
 
-projects[custom_formatters][version] = "2.2"
-projects[custom_formatters][subdir] = "contrib"
-
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
 
