@@ -76,6 +76,9 @@ projects[addtoany][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.0"
 projects[auto_nodetitle][subdir] = "contrib"
 
+projects[node_export][version] = "3.0"
+projects[node_export][subdir] = "contrib"
+
 projects[backup_migrate][version] = "2.8"
 projects[backup_migrate][subdir] = "contrib"
 
