@@ -101,7 +101,6 @@ function publicize_install() {
     ->execute();
   // set annonymous / authenticated users to do some basic things
   $perms = array(
-    'use text format filtered_html',
     'access content',
     'access user profiles',
     'search content',
