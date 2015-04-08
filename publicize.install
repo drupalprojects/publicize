@@ -90,6 +90,25 @@ function publicize_install() {
     $query->values($block);
   }
   $query->execute();
+  // we know this is 4 because of the other modules installed
+  $arid = 4;
+  user_role_grant_permissions($arid, array_keys(module_invoke_all('permission')));
+  // Set this as the administrator role.
+  variable_set('user_admin_role', $arid);
+  // Assign user 1 the "administrator" role.
+  db_insert('users_roles')
+    ->fields(array('uid' => 1, 'rid' => $arid))
+    ->execute();
+  // set annonymous / authenticated users to do some basic things
+  $perms = array(
+    'use text format filtered_html',
+    'access content',
+    'access user profiles',
+    'search content',
+    'view disqus comments',
+  );
+  user_role_grant_permissions(1, $perms);
+  user_role_grant_permissions(2, $perms);
   // Update the menu router information.
   menu_rebuild();
   // revert features to ensure they are all installed
@@ -101,7 +120,7 @@ function publicize_install() {
   // disable the titles of all menu blocks
   db_update('block')
     ->fields(array('title' => '<none>'))
-    ->condition('module', 'menu_block')
+    ->condition('module', 'menu_block', '=')
     ->execute();
   cache_clear_all();
   // ignore any rebuild messages
