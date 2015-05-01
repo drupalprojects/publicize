@@ -2,8 +2,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   var theme_name = 'foundation_publicize';
-  var base_theme_path = '../zurb_foundation';
-
+  var base_theme_path = '../../contrib/zurb_foundation';
   var global_vars = {
     theme_name: theme_name,
     theme_css: 'css',
