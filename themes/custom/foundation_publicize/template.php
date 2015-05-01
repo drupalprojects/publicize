@@ -43,7 +43,7 @@ function foundation_publicize_links__topbar_main_menu($variables) {
 }
 
 function foundation_publicize_hook_preprocess_page(&$variables) {
-        if (arg(0) == 'node') {
-                $variables['node_content'] =& $variables['page']['content']['system_main']['nodes'][arg(1)];
-        }
+	if (arg(0) == 'node') {
+	  $variables['node_content'] =& $variables['page']['content']['system_main']['nodes'][arg(1)];
+	}
 }
