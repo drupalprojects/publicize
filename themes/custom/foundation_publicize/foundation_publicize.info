@@ -95,6 +95,8 @@ regions[footer]              = Footer
 ; features[] = main_menu
 ; features[] = secondary_menu
 
+settings[toggle_logo] = 0
+
 ; Panel Layouts
 plugins[panels][layouts] = layouts
 
